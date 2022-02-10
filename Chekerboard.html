@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Divs</title>
+    <style>
+       #board {
+           height: 480px;
+           width: 480px;
+        border: 5px solid black;
+       }
+       .lightsquare1 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin: 0px;
+       }
+
+       .darksquare1 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 0px;
+           margin-left: 60px;
+       }
+
+       .lightsquare2 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 0px;
+           margin-left: 120px;
+       }
+
+       .darksquare2 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 0px;
+           margin-left: 180px;
+       }
+
+       .lightsquare3 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 0px;
+           margin-left: 240px;
+       }
+
+       .darksquare3 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 0px;
+           margin-left: 300px;
+       }
+
+       .lightsquare4 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 0px;
+           margin-left: 360px;
+       }
+
+       .darksquare4 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 0px;
+           margin-left: 420px;
+       }
+
+       .darksquare5 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 0px;
+       }
+
+       .lightsquare5 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 60px;
+       }
+
+       .darksquare6 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 120px;
+       }
+
+       .lightsquare6 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 180px;
+       }
+
+       .darksquare7 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 240px;
+       }
+
+       .lightsquare7 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 300px;
+       }
+
+       .darksquare8 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 360px;
+       }
+
+       .lightsquare8 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 60px;
+           margin-left: 420px;
+       }
+
+       .lightsquare9 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 0px;
+       }
+
+       .darksquare9 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 60px;
+       }
+
+       .lightsquare10 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 120px;
+       }
+
+       .darksquare10 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 180px;
+       }
+
+       .lightsquare11 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 240px;
+       }
+
+       .darksquare11 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 300px;
+       }
+
+       .lightsquare12 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 360px;
+       }
+
+       .darksquare12 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 120px;
+           margin-left: 420px;
+       }
+
+       .darksquare13 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 0px;
+       }
+
+       .lightsquare13 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 60px;
+       }
+
+       .darksquare14 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 120px;
+       }
+
+       .lightsquare14 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 180px;
+       }
+
+       .darksquare15 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 240px;
+       }
+
+       .lightsquare15 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 300px;
+       }
+
+       .darksquare16 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 360px;
+       }
+
+       .lightsquare16 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 180px;
+           margin-left: 420px;
+       }
+
+       .lightsquare17 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 0px;
+       }
+
+       .darksquare17 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 60px;
+       }
+
+       .lightsquare18 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 120px;
+       }
+
+       .darksquare18 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 180px;
+       }
+
+       .lightsquare19 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 240px;
+       }
+
+       .darksquare19 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 300px;
+       }
+
+       .lightsquare20 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 360px;
+       }
+
+       .darksquare20 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 240px;
+           margin-left: 420px;
+       }
+
+       .darksquare21 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 0px;
+       }
+
+       .lightsquare21 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 60px;
+       }
+
+       .darksquare22 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 120px;
+       }
+
+       .lightsquare22 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 180px;
+       }
+
+       .darksquare23 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 240px;
+       }
+
+       .lightsquare23 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 300px;
+       }
+
+       .darksquare24 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 360px;
+       }
+
+       .lightsquare24 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 300px;
+           margin-left: 420px;
+       }
+
+       .lightsquare25 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 0px;
+       }
+
+       .darksquare25 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 60px;
+       }
+
+       .lightsquare26 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 120px;
+       }
+
+       .darksquare26 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 180px;
+       }
+
+       .lightsquare27 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 240px;
+       }
+
+       .darksquare27 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 300px;
+       }
+
+       .lightsquare28 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 360px;
+       }
+
+       .darksquare28 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 360px;
+           margin-left: 420px;
+       }
+
+       .darksquare29 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 0px;
+       }
+
+       .lightsquare29 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 60px;
+       }
+
+       .darksquare30 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 120px;
+       }
+
+       .lightsquare30 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 180px;
+       }
+
+       .darksquare31 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 240px;
+       }
+
+       .lightsquare31 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 300px;
+       }
+
+       .darksquare32 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(46, 46, 6);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 360px;
+       }
+
+       .lightsquare32 {
+           height: 60px;
+           width: 60px;
+           background-color: rgb(131, 131, 77);
+           position:absolute;
+           margin-top: 420px;
+           margin-left: 420px;
+       }
+
+       .blackpiece {
+            height: 40px;
+           width: 40px;
+           background-color: rgb(31, 31, 24);
+           border: 5px solid black;
+           position:relative;
+           margin-top: 5px;
+           margin-left: 5px;
+           border-radius: 40px;
+       }
+
+       .redpiece {
+            height: 40px;
+           width: 40px;
+           background-color: rgb(131, 38, 10);
+           border: 5px solid rgb(61, 3, 3);
+           position:relative;
+           margin-top: 5px;
+           margin-left: 5px;
+           border-radius: 40px;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Checkers</h1>
+    <div id="board">
+        <div class="lightsquare1"></div>
+        <div class="darksquare1">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare2"></div>
+        <div class="darksquare2">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare3"></div>
+        <div class="darksquare3">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare4"></div>
+        <div class="darksquare4">
+            <div class="blackpiece"></div>
+        </div>
+
+        <div class="darksquare5">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare5"></div>
+        <div class="darksquare6">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare6"></div>
+        <div class="darksquare7">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare7"></div>
+        <div class="darksquare8">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare8"></div>
+        
+        <div class="lightsquare9"></div>
+        <div class="darksquare9">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare10"></div>
+        <div class="darksquare10">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare11"></div>
+        <div class="darksquare11">
+            <div class="blackpiece"></div>
+        </div>
+        <div class="lightsquare12"></div>
+        <div class="darksquare12">
+            <div class="blackpiece"></div>
+        </div>
+
+        <div class="darksquare13"></div>
+        <div class="lightsquare13"></div>
+        <div class="darksquare14"></div>
+        <div class="lightsquare14"></div>
+        <div class="darksquare15"></div>
+        <div class="lightsquare15"></div>
+        <div class="darksquare16"></div>
+        <div class="lightsquare16"></div>  
+
+        <div class="lightsquare17"></div>
+        <div class="darksquare17"></div>
+        <div class="lightsquare18"></div>
+        <div class="darksquare18"></div>
+        <div class="lightsquare19"></div>
+        <div class="darksquare19"></div>
+        <div class="lightsquare20"></div>
+        <div class="darksquare20"></div>
+
+        <div class="darksquare21">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare21"></div>
+        <div class="darksquare22">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare22"></div>
+        <div class="darksquare23">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare23"></div>
+        <div class="darksquare24">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare24"></div>          
+        
+        <div class="lightsquare25"></div>
+        <div class="darksquare25">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare26"></div>
+        <div class="darksquare26">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare27"></div>
+        <div class="darksquare27">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare28"></div>
+        <div class="darksquare28">
+            <div class="redpiece"></div>
+        </div>
+
+        <div class="darksquare29">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare29"></div>
+        <div class="darksquare30">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare30"></div>
+        <div class="darksquare31">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare31"></div>
+        <div class="darksquare32">
+            <div class="redpiece"></div>
+        </div>
+        <div class="lightsquare32"></div>
+    </div>
+
+</body>
+</html>
