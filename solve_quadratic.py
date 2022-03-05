@@ -10,8 +10,19 @@ def solve_quadratic(a,b,c):
         sol1 = (-b-math.sqrt(d))/(2*a)
         sol2 = (-b+math.sqrt(d))/(2*a)
 
-        print ('The solution:') 
-        print (sol1)
-        print (sol2)
+        print ('The solution:')
 
-solve_quadratic(1,-5,6)
+        try:
+            tmp = int(sol1)
+            print(sol1)
+        except:
+            print('The variable is not a number')
+
+        try:
+            tmp = int(sol2)
+            print(sol2)
+        except:
+            print('The variable is not a number')
+
+
+solve_quadratic(1,-5,6)    
