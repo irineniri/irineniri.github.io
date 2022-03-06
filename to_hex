@@ -1,0 +1,29 @@
+def to_hex(i):
+
+    if i < 16:
+        print(i)
+
+    else:
+        import math
+        r1 = i % 16
+        r2 = i // 16
+        r3 = r2 % 16
+        r4 = r2 // 16
+
+        list1 = [r4, r3, r1]
+
+        for i in range(len(list1)):
+            if list1[i] == 10:
+                list1[i] = "A"
+            elif list1[i] == 11: 
+                list1[i] = "B" 
+            elif list1[i] == 12: 
+                list1[i] = "C" 
+            elif list1[i] == 13: 
+                list1[i] = "D" 
+            elif list1[i] == 14: 
+                list1[i] = "E"
+            elif list1[i] == 15: 
+                list1[i] = "F"  
+
+        print(" ".join(map(str,list1)))
