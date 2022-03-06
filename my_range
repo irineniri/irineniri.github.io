@@ -1,0 +1,7 @@
+x=[]
+
+def my_range(m,n):
+    while m<n:
+        x.append(m)
+        m=m+1
+    return x
