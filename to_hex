@@ -1,6 +1,6 @@
 def to_hex(i):
 
-    if i < 16:
+    if i < 10:
         print(i)
 
     else:
@@ -26,4 +26,6 @@ def to_hex(i):
             elif list1[i] == 15: 
                 list1[i] = "F"  
 
-        print(" ".join(map(str,list1)))
+        list1 = [b for b in list1 if b != 0]
+        a = ''.join(map(str,list1))
+        print (a)
