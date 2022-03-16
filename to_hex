@@ -1,7 +1,7 @@
 def to_hex(i):
 
     if i < 10:
-        print(i)
+        return(str(i))
 
     else:
         import math
@@ -10,7 +10,7 @@ def to_hex(i):
         r3 = r2 % 16
         r4 = r2 // 16
 
-        list1 = [r4, r3, r1]
+        list1 = [r3, r1]
 
         for i in range(len(list1)):
             if list1[i] == 10:
@@ -26,6 +26,12 @@ def to_hex(i):
             elif list1[i] == 15: 
                 list1[i] = "F"  
 
-        list1 = [b for b in list1 if b != 0]
         a = ''.join(map(str,list1))
-        print (a)
+        return(a)
+
+def hex_color(red,green,blue):
+    red_hex = to_hex(red)
+    green_hex = to_hex(green)
+    blue_hex = to_hex(blue)
+
+    return("#" + red_hex + green_hex + blue_hex)
