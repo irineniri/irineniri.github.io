@@ -4,6 +4,10 @@ def my_reverse(x):
 
     i = len(x) - 1 
 
+    z=[]
+
     while i >= 0 :
-        print(x[i]) 
+        z.append(x[i])
         i -= 1
+
+    return(z)
